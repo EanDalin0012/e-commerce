@@ -8,7 +8,12 @@ import { Home5000Component } from './home5000/home5000.component';
 
 
 @NgModule({
-  declarations: [Home2000Component, Home3000Component, Home4000Component, Home5000Component],
+  declarations: [
+    Home2000Component, 
+    Home3000Component, 
+    Home4000Component, 
+    Home5000Component
+  ],
   imports: [
     CommonModule
   ]

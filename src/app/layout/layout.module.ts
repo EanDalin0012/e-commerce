@@ -10,9 +10,7 @@ import { LayoutBlankComponent } from './layout-blank/layout-blank.component';
 @NgModule({
   declarations: [
     HeaderComponent, 
-    FooterComponent, 
-    LayoutComponent, 
-    LayoutBlankComponent
+    FooterComponent
   ],
   imports: [
     CommonModule

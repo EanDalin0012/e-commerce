@@ -1,30 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { Home1000Component } from './home/home1000/home1000.component';
-import { ProductComponent } from './product/product.component';
-import { ProfileComponent } from './profile/profile.component';
-import { NotificationComponent } from './notification/notification.component';
-import { OrderComponent } from './order/order.component';
+import { LayoutBlankComponent } from './layout/layout-blank/layout-blank.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LayoutModule } from './layout/layout.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    Home1000Component,
-    ProductComponent,
-    ProfileComponent,
-    NotificationComponent,
-    OrderComponent,
-    LayoutComponent
+    LayoutComponent,
+    LayoutBlankComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
