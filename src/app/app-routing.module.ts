@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from './layout/layout.component';
+import { LayoutComponent } from './layout/layout/layout.component';
 
 const routes: Routes = [
   {path:'', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: LayoutComponent, loadChildren: './home/home.module#HomeModule'}
+  {path: 'main', component: LayoutComponent, loadChildren: './module/module.module#Modules'},
 ];
 
 @NgModule({
