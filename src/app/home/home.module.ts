@@ -7,11 +7,13 @@ import { Home5000Component } from './home5000/home5000.component';
 import { HomeComponent } from './home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { SBSharedModule } from '../share/sbshare.module';
+import { Home1000Component } from './home1000/home1000.component';
 
 
 
 @NgModule({
   declarations: [
+    Home1000Component,
     Home2000Component, 
     Home3000Component, 
     Home4000Component, 

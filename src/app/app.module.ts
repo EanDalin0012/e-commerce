@@ -1,21 +1,15 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutBlankComponent } from './layout/layout-blank/layout-blank.component';
-import { LayoutComponent } from './layout/layout/layout.component';
-import { LayoutModule } from '@progress/kendo-angular-layout';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SortableModule } from '@progress/kendo-angular-sortable';
-import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
-import { SchedulerModule } from '@progress/kendo-angular-scheduler';
-import { NotificationModule } from '@progress/kendo-angular-notification';
-import { UploadModule } from '@progress/kendo-angular-upload';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MLayoutModule } from './layout/layout.module';
-import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { LayoutComponent } from './layout/layout/layout.component';
+import { SBSharedModule } from './share/sbshare.module';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -33,13 +27,8 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     MLayoutModule,
     BrowserAnimationsModule,
-    SortableModule,
-    PDFExportModule,
-    SchedulerModule,
-    NotificationModule,
-    UploadModule,
     HttpClientModule,
-    DropDownsModule,
+    SBSharedModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

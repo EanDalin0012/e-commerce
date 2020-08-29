@@ -1,0 +1,16 @@
+.bottun-product {
+    width: 100%;
+    height: 45px;
+    bottom: 0;
+    position: absolute;
+    margin-left: -24px;
+    /* border-radius: 0px 0px 5px 5px; */
+}
+
+.s1tcr66n {
+    border-bottom: 1px solid #ced0d4;
+}
+
+.s2tcr66n {
+    border-top: 1px solid #ced0d4;
+}

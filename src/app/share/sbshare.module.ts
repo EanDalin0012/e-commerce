@@ -10,7 +10,6 @@ import { LayoutModule } from '@progress/kendo-angular-layout';
 import { SortableModule } from '@progress/kendo-angular-sortable';
 import { ModalComponent } from './component/modal/modal.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import { ExcelExportModule } from '@progress/kendo-angular-excel-export';
@@ -28,7 +27,6 @@ import { UploadModule } from '@progress/kendo-angular-upload';
    /*  CommonModule */
   ],
   exports : [
-    // CommonModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
@@ -40,12 +38,7 @@ import { UploadModule } from '@progress/kendo-angular-upload';
     SortableModule,
     DropDownsModule,
     PDFModule,
-    // AccountFormatePipe,
-    // CurrencyFormatePipe,
-    // FilesizePipe
-
     ButtonsModule,
-    // BrowserAnimationsModule,
     ChartsModule,
     DateInputsModule,
     DialogsModule,
@@ -55,7 +48,6 @@ import { UploadModule } from '@progress/kendo-angular-upload';
     SchedulerModule,
     NotificationModule,
     UploadModule,
-
   ],
   entryComponents: [
     ModalComponent,
