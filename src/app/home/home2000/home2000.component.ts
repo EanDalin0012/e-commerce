@@ -11,6 +11,18 @@ import { data } from './data';
 export class Home2000Component implements OnInit {
   imageSrc= 'https://www.telerik.com/kendo-angular-ui-develop/components/layout/examples/card/display_media/black_sea.jpg';
   productList = new Array<Product>();
+  public chips = [
+    {
+      label: 'Apple',
+      selected: false,
+      removable: true
+  },
+  {
+      label: 'Strawberry',
+      selected: false,
+      removable: true
+  },
+];
   constructor() { }
 
   ngOnInit(): void {

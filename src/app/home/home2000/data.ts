@@ -4,7 +4,7 @@ export const data: Product[] =[
     {
       id: 1,
       name: 'Product 1',
-      src: 'https://www.telerik.com/kendo-angular-ui-develop/components/layout/examples/card/display_media/black_sea.jpg',
+      src: 'https://contents.mediadecathlon.com/p751419/k$fbf9dd4832086b228c9dd1c162729311/autonomous-torch-dynamo-50-collection-8-lumens.jpg?&f=250x250',
       description: 'Testing product 1',
       price: 20,
       currency: 'USD',

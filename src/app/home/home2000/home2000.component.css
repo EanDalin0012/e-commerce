@@ -29398,3 +29398,10 @@ body[data-gr-c-s-loaded] {
 .margin-right-5px {
     margin-right: 5px;
 }
+.width {
+    width: 100%;
+}
+.img {
+    width: 200px;
+    height: 146px;
+}

@@ -1,0 +1,11 @@
+.sit-map-icon {
+    font-size: 20px;
+    color: #12225B;
+    margin-left: 5px;
+}
+.margin-left-5 {
+    margin-left: 5px;
+}
+.cursor-pointer:hover {
+    cursor: pointer;
+}

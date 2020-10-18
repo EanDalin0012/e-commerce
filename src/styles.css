@@ -6126,3 +6126,13 @@ kendo-upload div:nth-child(0) {
 .fas {
     font-family: "Font Awesome 5 Free";
 }
+.main-footer{
+    margin-left: 0px !important;
+    padding: 1rem 12rem 1rem 12rem;
+}
+.pull-right {
+    float: right;
+}
+body {
+    overflow-y: scroll;
+}

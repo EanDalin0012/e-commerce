@@ -22,27 +22,43 @@
                         <div class="stickers js-card-stickers"></div>
                     </div>
                     <div class="list-card-details js-card-details">
-                        <img kendoCardMedia [src]="product.src" />
+                        <img class="img" kendoCardMedia [src]="product.src" />
                         <span class="list-card-title js-card-name" dir="auto">
                              {{product.description}}
                         </span>
-
-                        <div>
+                        <div style="width: 110px;float: left;">
                             <strong>
                                 <span class = "margin-right-5px">{{product.price}}</span>
                                 <span>{{product.currency}}</span>
                             </strong>
-                            <i class="fas fa-plus"></i>
+
+                            
+                            <!-- <kendo-chip
+                                *ngFor="let chip of chips"
+                                [label]="chip.label"
+                            >
+                            </kendo-chip> -->
 
                         </div>
-
-
-                        <div class="badges">
-                            <span class="js-badges">
+                        <div style="float: right;">
+                            <button class="float-left k-button k-primary k-flat float-left">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="float-left k-primary k-flat float-left">
+                                <strong>0</strong>
+                            </button>
+                            <button class="float-left k-button k-primary k-flat float-right">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                        <div class="badges width" style="box-shadow: 0 -1px 0 rgba(9, 30, 66, .25);">
+                            <button class="float-left" kendoButton [look]="'flat'" [primary]="true">View</button>
+                            <button class ="float-right" kendoButton [look]="'flat'" [primary]="true" [icon]="'shopping-cart'" [look]="'flat'">Add Cart</button>
+                            <!-- <span class="js-badges">
                                 <div class="badge is-icon-only">
                                     <span class="badge-icon icon-sm icon-description"></span>
-                        </div>
-                        </span>
+                                </div>
+                            </span> -->
                     </div>
             </div>
             </a>
