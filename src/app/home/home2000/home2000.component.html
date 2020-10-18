@@ -1,40 +1,51 @@
-<div class="contentsWrap contentsWrap01">
-    <!-- Navigation Tab -->
-    <div class="naviWrap">
+<div class="" style="margin-top: 60px;">
 
-    </div>
-    <!-- //Navigation Tab -->
-    <!-- page title -->
-    <div class="page_title">
-        <div class="breadcrumb">
-            <div class="page_navi">
-                <span>Home</span>
-                <span>Information</span>
-            </div>
-            <h1><span>Product Management</span></h1>
-        </div>
-    </div>
-    <div class="container01">
-        <div class="row">
-
-
-            <div class="col-lg-4 container01 margin-right-20 box-shadow height-325">
-                <div>
-                    <img class="max-width" src="../../../assets/product-img/aparato-1.3778771f97487bee559f300f8e28357f.png" alt="">
-                </div>
-                <div class="add-btn btn-css">
-                    <span>Add New</span>
+    <div class="col-sm-3 float-left padding-15" *ngFor="let product of productList">
+        <div class="list js-list-content" style="max-height: 350px;">
+            <div class="list-header js-list-header u-clearfix">
+                <div class="list-header-target js-editing-target"></div>
+                <h2 class="list-header-name-assist js-list-name-assist" dir="auto">{{product.name}}</h2>
+                <textarea class="list-header-name mod-list-name js-list-name-input" style="overflow: hidden; overflow-wrap: break-word; height: 28px;">{{product.name}}</textarea>
+                <div class="list-header-extras">
+                    <span class="list-header-extras-subscribe js-list-subscribed hide">
+                        <span class="icon-sm icon-subscribe mod-quiet"></span>
+                    </span>
+                    <span class="list-header-extras-limit-badge js-list-limit-badge hide"></span>
                 </div>
             </div>
 
-            <div class="col-lg-4 container01 margin-right-20 box-shadow height-325">
-                <div>
-                    <img class="max-width" src="../../../assets/product-img/aparato-1.3778771f97487bee559f300f8e28357f.png" alt="">
-                </div>
-                <div class="row bottun-product s2tcr66n">
-                    <span>Add New</span>
-                </div>
+            <div class="list-cards u-fancy-scrollbar u-clearfix js-list-cards">
+                <a class="list-card js-member-droppable ui-droppable">
+                    <div class="list-card-cover js-card-cover"></div>
+
+                    <div class="list-card-stickers-area js-stickers-area hide">
+                        <div class="stickers js-card-stickers"></div>
+                    </div>
+                    <div class="list-card-details js-card-details">
+                        <img kendoCardMedia [src]="product.src" />
+                        <span class="list-card-title js-card-name" dir="auto">
+                             {{product.description}}
+                        </span>
+
+                        <div>
+                            <strong>
+                                <span class = "margin-right-5px">{{product.price}}</span>
+                                <span>{{product.currency}}</span>
+                            </strong>
+                            <i class="fas fa-plus"></i>
+
+                        </div>
+
+
+                        <div class="badges">
+                            <span class="js-badges">
+                                <div class="badge is-icon-only">
+                                    <span class="badge-icon icon-sm icon-description"></span>
+                        </div>
+                        </span>
+                    </div>
             </div>
+            </a>
 
         </div>
 

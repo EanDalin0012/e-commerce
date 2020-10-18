@@ -16,15 +16,21 @@ import { ExcelExportModule } from '@progress/kendo-angular-excel-export';
 import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { NotificationModule } from '@progress/kendo-angular-notification';
-import { InputsModule } from '@progress/kendo-angular-inputs';
+import { InputsModule, TextBoxModule } from '@progress/kendo-angular-inputs';
 import { UploadModule } from '@progress/kendo-angular-upload';
+import { NavigationModule } from '@progress/kendo-angular-navigation';
+import { IconModule } from '@progress/kendo-angular-icons';
+import { LabelModule } from '@progress/kendo-angular-label';
+import { IndicatorsModule } from '@progress/kendo-angular-indicators';
+import { MenusModule } from '@progress/kendo-angular-menu';
+import { ScrollViewModule } from '@progress/kendo-angular-scrollview';
 
 @NgModule({
   declarations: [
-  ModalComponent
+  ModalComponent,
 ],
   imports: [
-   /*  CommonModule */
+   CommonModule
   ],
   exports : [
     HttpClientModule,
@@ -43,11 +49,20 @@ import { UploadModule } from '@progress/kendo-angular-upload';
     DateInputsModule,
     DialogsModule,
     ExcelExportModule,
-    InputsModule,
     PDFExportModule,
     SchedulerModule,
     NotificationModule,
     UploadModule,
+    NavigationModule,
+
+    IconModule,
+    InputsModule,
+    LabelModule,
+    IndicatorsModule,
+    TextBoxModule,
+    MenusModule,
+    ScrollViewModule,
+    
   ],
   entryComponents: [
     ModalComponent,

@@ -10,6 +10,18 @@ import { LayoutBlankComponent } from './layout/layout-blank/layout-blank.compone
 import { MLayoutModule } from './layout/layout.module';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { SBSharedModule } from './share/sbshare.module';
+import { NavigationModule } from '@progress/kendo-angular-navigation';
+import { IconsModule } from '@progress/kendo-angular-icons';
+import { LabelModule } from '@progress/kendo-angular-label';
+import { IndicatorsModule } from '@progress/kendo-angular-indicators';
+import { MenuModule } from '@progress/kendo-angular-menu';
+import { ScrollViewModule } from '@progress/kendo-angular-scrollview';
+
+
+
+
+
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -36,6 +48,12 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       },
     }),
+    NavigationModule,
+    IconsModule,
+    LabelModule,
+    IndicatorsModule,
+    MenuModule,
+    ScrollViewModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

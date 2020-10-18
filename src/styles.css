@@ -6062,3 +6062,67 @@ kendo-upload div:nth-child(0) {
 .box-shadow {
     box-shadow: 0 3px 10px 5px rgba(197, 197, 197, .45);
 }
+
+.content-wrapper,
+.main-footer {
+    margin-left: 0px;
+    box-shadow: 0 -1px 0 rgba(9, 30, 66, .25);
+    margin-top: 6px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.k-animation-container .k-item {
+    padding: 6px 10px;
+    color: #696f79;
+}
+
+.k-appbar {
+    box-shadow: 0 1px 0 rgba(9, 30, 66, .25);
+}
+
+.kendo-icon {
+    font-size: 25px;
+}
+
+.k-badge-circle.k-badge-md {
+    width: calc(1em + 7px);
+    height: calc(1em + 7px);
+}
+
+.k-appbar {
+    padding: 8px 40px;
+}
+
+.kendo-avatar div:nth-child(1) {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.position {
+    position: absolute;
+}
+
+.width {
+    width: 100%;
+}
+
+.content-1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.position-fix {
+    position: fixed;
+}
+
+.z-index-9999 {
+    z-index: 9999;
+}
+
+.fa,
+.far,
+.fas {
+    font-family: "Font Awesome 5 Free";
+}

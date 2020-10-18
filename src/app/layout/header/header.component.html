@@ -1,154 +1,62 @@
-<header class="main-header">
-    <!-- Logo -->
-    <a class="logo" href="#">
-        <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>A</b>LT</span>
-        <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Admin</b>LTE</span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-        <!-- Sidebar toggle button-->
-        <a class="sidebar-toggle" data-toggle="push-menu" href="#" role="button">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </a>
+<kendo-appbar [position]="'top'" class="position-fix width z-index-9999">
+    <kendo-appbar-section class="title">
+        <h1 class="title">Page Title</h1>
+    </kendo-appbar-section>
 
-        <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-                <!-- Messages: style can be found in dropdown.less-->
-                <li class="dropdown messages-menu">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope-o"></i>
-                        <span class="label label-success">4</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="header">You have 4 messages</li>
-                        <li>
-                            <!-- inner menu: contains the actual data -->
-                            <ul class="menu">
-                                <li>
-                                    <!-- start message -->
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img alt="User Image" class="img-circle" src="assets/dist/img/user2-160x160.jpg">
-                                        </div>
-                                        <h4>
-                                            Support Team
-                                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <!-- end message -->
-                            </ul>
-                        </li>
-                        <li class="footer"><a href="#">See All Messages</a></li>
-                    </ul>
-                </li>
-                <!-- Notifications: style can be found in dropdown.less -->
-                <li class="dropdown notifications-menu">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell-o"></i>
-                        <span class="label label-warning">10</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="header">You have 10 notifications</li>
-                        <li>
-                            <!-- inner menu: contains the actual data -->
-                            <ul class="menu">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="footer"><a href="#">View all</a></li>
-                    </ul>
-                </li>
-                <!-- Tasks: style can be found in dropdown.less -->
-                <li class="dropdown tasks-menu">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-flag-o"></i>
-                        <span class="label label-danger">9</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li class="header">You have 9 tasks</li>
-                        <li>
-                            <!-- inner menu: contains the actual data -->
-                            <ul class="menu">
-                                <li>
-                                    <!-- Task item -->
-                                    <a href="#">
-                                        <h3>
-                                            Design some buttons
-                                            <small class="pull-right">20%</small>
-                                        </h3>
-                                        <div class="progress xs">
-                                            <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-aqua" role="progressbar" style="width: 20%">
-                                                <span class="sr-only">20% Complete</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <!-- end task item -->
-                            </ul>
-                        </li>
-                        <li class="footer">
-                            <a href="#">View all tasks</a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- User Account: style can be found in dropdown.less -->
-                <li class="dropdown user user-menu">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <img alt="User Image" class="user-image" src="assets/dist/img/user2-160x160.jpg">
-                        <span class="hidden-xs">Dalin Ean</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <!-- User image -->
-                        <li class="user-header">
-                            <img alt="User Image" class="img-circle" src="assets/dist/img/user2-160x160.jpg">
+    <kendo-appbar-spacer [width]="'32px'"></kendo-appbar-spacer>
 
-                            <p>
-                                Ean Dalin - Web Developer
-                                <small>Member since Nov. 2012</small>
-                            </p>
-                        </li>
-                        <!-- Menu Body -->
-                        <li class="user-body">
-                            <div class="row">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Followers</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Sales</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">Friends</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-                        </li>
-                        <!-- Menu Footer-->
-                        <li class="user-footer">
-                            <div class="pull-left">
-                                <a class="btn btn-default btn-flat" href="#">Profile</a>
-                            </div>
-                            <div class="pull-right">
-                                <a class="btn btn-default btn-flat" href="#">Sign out</a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <!-- Control Sidebar Toggle Button -->
-                <li>
-                    <a data-toggle="control-sidebar" href="#"><i class="fa fa-gears"></i></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <kendo-appbar-section class="appbar-items">
+        <kendo-menu [items]="items">
+        </kendo-menu>
+    </kendo-appbar-section>
+
+    <kendo-appbar-spacer></kendo-appbar-spacer>
+
+    <!-- <kendo-appbar-section class="search-section">
+        <kendo-textbox placeholder="Search..." [clearButton]="true">
+            <ng-template kendoTextBoxPrefixTemplate>
+                <kendo-icon [name]="'search'"></kendo-icon>
+            </ng-template>
+        </kendo-textbox>
+    </kendo-appbar-section> -->
+    <!-- 
+    <kendo-appbar-section class='user-actions'> -->
+    <kendo-badge-container>
+        <kendo-icon class="kendo-icon" [name]="'shopping-cart'"></kendo-icon>
+        <kendo-badge>4</kendo-badge>
+    </kendo-badge-container>
+    <span class="k-appbar-separator"></span>
+    <!-- </kendo-appbar-section> -->
+
+    <!-- <kendo-appbar-section class='user-actions'> -->
+    <kendo-badge-container>
+        <kendo-icon class="kendo-icon" [name]="'bell'"></kendo-icon>
+        <kendo-badge [shape]="'dot'" [themeColor]="'warning'" [size]="'small'" [position]="'inside'"></kendo-badge>
+    </kendo-badge-container>
+    <span class="k-appbar-separator"></span>
+    <!-- </kendo-appbar-section> -->
+    <kendo-avatar class="kendo-avatar" [imageSrc]="kendokaAvatar" [shape]="'circle'"></kendo-avatar>
+
+
+    <kendo-appbar-section>
+        <button class="k-button k-flat overflow-button" #anchor (click)="onToggle()">
+            <kendo-icon [name]="'menu'"></kendo-icon>
+        </button>
+
+        <kendo-popup [anchor]="anchor" *ngIf="show" [margin]="margin">
+            <div class='content'>
+                <!-- <ul>
+                    <li class="search">Search...</li>
+                    <li><span>What's New</span></li>
+                    <li><span>About</span></li>
+                    <li><span>Contacts</span></li>
+                    <li><span>Notifications</span></li>
+                    <li><span>My Profile</span></li>
+                </ul> -->
+                <kendo-menu [items]="items">
+                </kendo-menu>
+            </div>
+        </kendo-popup>
+
+    </kendo-appbar-section>
+</kendo-appbar>
