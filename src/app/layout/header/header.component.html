@@ -23,7 +23,10 @@
     <kendo-appbar-section class='user-actions'> -->
     <kendo-badge-container>
         <kendo-icon class="kendo-icon" [name]="'shopping-cart'"></kendo-icon>
-        <kendo-badge>4</kendo-badge>
+        <kendo-badge>
+           <strong  *ngIf = "totalCartCounter">{{totalCartCounter}}</strong>
+           <strong  *ngIf = "!totalCartCounter">0</strong>
+        </kendo-badge>
     </kendo-badge-container>
     <span class="k-appbar-separator"></span>
     <!-- </kendo-appbar-section> -->

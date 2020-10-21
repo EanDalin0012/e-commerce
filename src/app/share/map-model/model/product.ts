@@ -6,4 +6,5 @@ export class Product {
     price: number;
     currency: string;
     category_id: number;
+    qty?: number;
 }

@@ -66,7 +66,7 @@ export const data: Product[] =[
         currency: 'USD',
         category_id: 2
       },{
-        id: 1,
+        id: 9,
         name: 'Product 1',
         src: 'https://technabob.com/blog/wp-content/uploads/2011/12/Easy-Iron.jpg',
         description: 'Testing product 1',
@@ -74,7 +74,7 @@ export const data: Product[] =[
         currency: 'USD',
         category_id: 1
       },{
-        id: 2,
+        id: 10,
         name: 'Product 2',
         src: 'https://www.yankodesign.com/images/design_news/2011/09/08/iron7.jpg',
         description: 'Testing product 2',
@@ -82,7 +82,7 @@ export const data: Product[] =[
         currency: 'USD',
         category_id: 1
       },{
-        id: 3,
+        id: 11,
         name: 'Product 3',
         src: 'https://professional3dservices.com/img/modeling/electronic-3d-model.jpg',
         description: 'Testing product 3',
@@ -90,7 +90,7 @@ export const data: Product[] =[
         currency: 'USD',
         category_id: 1
       },{
-        id: 4,
+        id: 12,
         name: 'Product 4',
         src: 'https://designapplause.com/wp-content/xG58hlz9/2010/11/kravis3-14b.png',
         description: 'Testing product 4',
@@ -98,7 +98,7 @@ export const data: Product[] =[
         currency: 'USD',
         category_id: 2
       },{
-        id: 5,
+        id: 13,
         name: 'Product 5',
         src: 'https://designrfix.com/wp-content/uploads/2009/12/industrial-design-2009-products-45.jpg',
         description: 'Testing product 5',
@@ -106,7 +106,7 @@ export const data: Product[] =[
         currency: 'USD',
         category_id: 1
       },{
-        id: 6,
+        id: 14,
         name: 'Product 6',
         src: 'https://www.yankodesign.com/images/design_news/2020/08/auto-draft/bmw_r100_good_ghost_1-510x340.jpg',
         description: 'Testing product 6',
@@ -114,7 +114,7 @@ export const data: Product[] =[
         currency: 'USD',
         category_id: 2
       },{
-          id: 7,
+          id: 15,
           name: 'Product 7',
           src: 'https://inspgr.id/app/uploads/2016/03/art-ron-arad-feature.jpg',
           description: 'Testing product 7',
@@ -122,7 +122,7 @@ export const data: Product[] =[
           currency: 'USD',
           category_id: 1
         },{
-          id: 8,
+          id: 16,
           name: 'Product 8',
           src: 'https://lh3.googleusercontent.com/proxy/MbUDZ3QncyIEJ8wFqeNujoogsDLtFduuXf8jm-H90a3izkLH_bXhreCYXFI9Ty82CNgw-tmcz70W1QMRferUDgygKigCmG5sqggv0QVb63iz4Qdz36Gr',
           description: 'Testing product 8',

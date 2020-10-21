@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../share/map-model/model/product';
 import { data } from './data';
+import { DataService } from '../../share/services/data.service';
 
 @Component({
   selector: 'app-home2000',
@@ -23,10 +24,53 @@ export class Home2000Component implements OnInit {
       removable: true
   },
 ];
-  constructor() { }
+  constructor(
+    private dataService:DataService) { }
 
   ngOnInit(): void {
     this.productList = data;
   }
 
+  plus(product:Product) {
+    if (product) {
+      this.productList.forEach(element => {
+        if(element.id === product.id) {
+          console.log(element.id);
+          if(element.qty) {
+            element.qty += 1;
+          } else {
+            element.qty = 1;
+          }
+        }
+      });
+    }
+  }
+
+  minus(product:Product) {
+    if (product) {
+      this.productList.forEach(element => {
+        if(element.id === product.id) {
+          console.log(element.id);
+          if(element.qty) {
+            element.qty -= 1;
+          } else {
+            element.qty = 0;
+          }
+        }
+      });
+    }
+  }
+
+  addCart(product: Product) {
+    console.log(product);
+    if(!product.qty) {
+      this.showIncreaseMessage('please increas qty');
+      return;
+    }
+    this.dataService.cartDataSource(product);
+  }
+
+  showIncreaseMessage(text:string) {
+    console.log(text);
+  }
 }
