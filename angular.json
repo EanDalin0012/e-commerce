@@ -25,7 +25,10 @@
                         ],
                         "styles": [
                             "src/assets/css/trello.css",
-                            { "input": "node_modules/bootstrap/dist/css/bootstrap.min.css" },
+                            {
+                                "input": "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                                "inject": true
+                            },
                             "src/assets/bower_components/Ionicons/css/ionicons.min.css",
                             "src/assets/bower_components/fontawesome-free-5.15.1-web/css/fontawesome.css",
                             "src/assets/bower_components/fontawesome-free-5.15.1-web/css/brands.css",
@@ -64,19 +67,21 @@
                     },
                     "configurations": {
                         "production": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.prod.ts"
+                                }
+                            ],
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "extractLicenses": true,
                             "vendorChunk": false,
                             "buildOptimizer": true,
-                            "budgets": [{
+                            "budgets": [
+                                {
                                     "type": "initial",
                                     "maximumWarning": "2mb",
                                     "maximumError": "5mb"
@@ -119,8 +124,10 @@
                             "src/favicon.ico",
                             "src/assets"
                         ],
-                        "styles": [{
-                                "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
+                        "styles": [
+                            {
+                                "input": "node_modules/@progress/kendo-theme-default/dist/all.css",
+                                "inject": true
                             },
                             "src/styles.css"
                         ],
